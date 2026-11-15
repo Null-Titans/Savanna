@@ -1,0 +1,521 @@
+import { TranslationDictionary } from '../types';
+
+/**
+ * Amharic (am) Plain-Language Locale
+ * IMPORTANT (Addendum E5): Every Amharic string below is marked `needsNativeReview: true`
+ * until reviewed and confirmed by a native Amharic speaker and lived-experience tester.
+ */
+export const am: TranslationDictionary = {
+  meta: {
+    locale: 'am',
+    needsNativeReview: true, // Every Amharic string requires native-speaker review before production claim
+    reviewNote: 'Plain-language draft (~grade 5 reading level). Needs native Amharic speaker review.',
+  },
+  common: {
+    skipToContent: 'ወደ ዋናው ይዘት ይለፉ', // needs native review
+    demoBannerTitle: 'የማሳያ ሁነታ (Demo)', // needs native review
+    demoBannerBody: 'ይህ የሙከራ መረጃ ብቻ ነው። ምንም መረጃ ወደ እውነተኛ ሰርቨር አይላክም ወይም በSMS አይላክም።', // needs native review
+    realApiLabel: 'የተገናኘ API', // needs native review
+    mockApiLabel: 'የማሳያ ሁነታ', // needs native review
+    languageLabel: 'ቋንቋ', // needs native review
+    back: 'ተመለስ', // needs native review
+    continue: 'ቀጥል', // needs native review
+    skip: 'ይህን ጥያቄ እለፍ', // needs native review
+    reviewAnswers: 'መልሶቼን ገምግም', // needs native review
+    submit: 'ምዝገባውን ላክ', // needs native review
+    edit: 'አስተካክል', // needs native review
+    save: 'እዚህ አስቀምጥ', // needs native review
+    retry: 'እንደገና ሞክር', // needs native review
+    loadingStatus: 'በመጫን ላይ ነው፣ እባክዎ ይጠብቁ…', // needs native review
+    optionalBadge: 'አማራጭ (መዝለል ይቻላል)', // needs native review
+    whyWeAskLabel: 'ይህን ለምን እንጠይቃለን?', // needs native review
+    readAloud: 'ጥያቄውን በድምፅ አንብብ', // needs native review
+    stopReading: 'ማንበብ አቁም', // needs native review
+    readAloudUnavailable: 'ለዚህ ቋንቋ የተረጋገጠ ድምፅ አልተገኘም። ጽሁፉን በስክሪኑ ላይ ማንበብ ይችላሉ።', // needs native review
+    loadingAudio: 'ተፈጥሯዊ ድምፅ በማዘጋጀት ላይ…', // needs native review
+    stepOf: 'ደረጃ {current} ከ {total}', // needs native review
+    noTimeoutNotice: 'የጊዜ ገደብ የለም። መልሶችዎ እስኪጨርሱ ድረስ አይጠፉም።', // needs native review
+    errorSummaryTitle: 'ከመቀጠልዎ በፊት ይህን ያስተካክሉ', // needs native review
+    darkModeLabel: 'ጨለማ ገጽታ', // needs native review
+    lightModeLabel: 'ብሩህ ገጽታ', // needs native review
+    easyReadOn: 'ቀላል እይታ፡ በርቷል', // needs native review
+    easyReadOff: 'ቀላል እይታ', // needs native review
+    offlineNotice: 'ኢንተርኔት ተቋርጧል። መልሶችዎ በዚህ ገጽ ላይ ተይዘዋል፤ ሲመለስ እንደገና ይሞክራል።', // needs native review
+    onlineRetryNotice: 'ኢንተርኔት ተመልሷል።', // needs native review
+  },
+  nav: {
+    gateway: 'መነሻ', // needs native review
+    onboarding: 'ምዝገባ', // needs native review
+    profile: 'መገለጫዬ', // needs native review
+    careers: 'ተደራሽ ስራዎች', // needs native review
+    learning: 'መማሪያ ግብዓቶች', // needs native review
+    dashboard: 'ዳሽቦርድ', // needs native review
+    employers: 'ለአሰሪዎች', // needs native review
+    formBuilder: 'ቅጽ ገንቢ', // needs native review
+    judgeChecklist: 'የዳኞች ማረጋገጫ', // needs native review
+    startAction: 'ምዝገባ ጀምር', // needs native review
+    themeSettings: 'ገጽታ እና API', // needs native review
+    voiceAssistant: 'የድምፅ ረዳት', // needs native review
+  },
+  home: {
+    headline: 'ቀላል ምዝገባ እና ተደራሽ የስራ እድሎች፣ አንድ ጥያቄ በአንድ ጊዜ።', // needs native review
+    subtitle: 'ያለ ቀበሌ መታወቂያ ወይም ፓስፖርት መመዝገብ ይችላሉ። በድምፅ ወይም በጽሁፍ መመለስ እና የስራ ድጋፍ የሚሰጡ ስራዎችን መፈለግ ይችላሉ።', // needs native review
+    onboardingCardTitle: 'ተማሪ ሆነው ይመዝገቡ', // needs native review
+    onboardingCardBody: 'በአንድ ገጽ አንድ ቀላል ጥያቄ። በድምፅ ወይም በጽሁፍ ይመልሱ፣ የማይፈልጉትን ጥያቄ ይለፉ።', // needs native review
+    onboardingCardCta: 'ምዝገባ ጀምር', // needs native review
+    careerCardTitle: 'ተደራሽ ስራዎችን ይመልከቱ', // needs native review
+    careerCardBody: 'የጤና ወይም የህክምና ማስረጃ ሳይጠየቁ በስራ ቦታ ድጋፍ መሰረት ስራዎችን ይፈልጉ።', // needs native review
+    careerCardCta: 'ስራዎችን ፈልግ', // needs native review
+    partnerModeCta: 'በአጋር ድርጅት እገዛ መመዝገብ', // needs native review
+    employerModeCta: 'ለአሰሪዎች፡ የስራ ድጋፍ መመዝገቢያ', // needs native review
+    promiseTitle: 'የግላዊነት እና የተደራሽነት ቃል ኪዳናችን', // needs native review
+    promiseItems: [
+      'የቀበሌ መታወቂያ፣ ፓስፖርት ወይም የህክምና ማስረጃ አይጠየቅም።', // needs native review
+      'የግል ድጋፍ ጥያቄዎ ያለ እርስዎ ፈቃድ ለአሰሪዎች አይታይም።', // needs native review
+      'የጋራ ስልክ የሚጠቀሙ ከሆነ መረጃዎ በስልኩ ላይ አይቀመጥም።', // needs native review
+    ],
+    navGuide: {
+      badge: 'የተደራሽነት አሰሳ መመሪያ', // needs native review
+      title: 'የድምፅ እና የቁልፍ ሰሌዳ አሰሳን እንዴት መጠቀም እንደሚቻል', // needs native review
+      subtitle: 'እያንዳንዱን ገጽ በድምፅ ወይም በቁልፍ ሰሌዳ አቋራጮች በራስዎ መጠቀም ይችላሉ።', // needs native review
+      keyboardHeading: 'የቁልፍ ሰሌዳ አሰሳ', // needs native review
+      keyboardItems: [
+        { keys: 'Tab', description: 'ወደ ቀጣዩ ተግባራዊ ንጥል ይሂዱ እና መግለጫውን በድምፅ ይስሙ።' }, // needs native review
+        { keys: 'Shift + Tab', description: 'ወደ ቀዳሚው ንጥል ይመለሱ እና መግለጫውን ይስሙ።' }, // needs native review
+        { keys: 'Enter', description: 'ትኩረት የተደረገበትን ቁልፍ ወይም አገናኝ ይክፈቱ።' }, // needs native review
+        { keys: 'Ctrl + Shift + A', description: 'የGemini Live የድምፅ ረዳትን ያስጀምሩ ወይም ያቁሙ።' }, // needs native review
+      ],
+      voiceHeading: 'የድምፅ ረዳት', // needs native review
+      voiceItems: [
+        { phrase: '"Hey Access"', description: 'የድምፅ ማስነሻ ማይክሮፎኑ ሲበራ ረዳቱን ለመክፈት ይህን ይበሉ።' }, // needs native review
+        { phrase: 'በተፈጥሮ ይናገሩ', description: 'ገጾችን ለመክፈት፣ ቅጾችን ለመሙላት ወይም ስራ ለመፈለግ በድምፅ ይነጋገሩ።' }, // needs native review
+        { phrase: 'የገጽ እገዛ', description: 'እገዛ በፈለጉ ጊዜ ረዳቱ ገጹን እንዲያነብልዎት ወይም እንዲያብራራልዎት ይጠይቁ።' }, // needs native review
+        { phrase: '"Goodbye" / "Stop listening"', description: 'ውይይቱን ለማቆም ከነዚህ አንዱን ይናገሩ።' }, // needs native review
+      ],
+      learnMoreButton: 'ይህን ድረ-ገጽ እንዴት መጠቀም እንደሚቻል ይወቁ', // needs native review
+      hideGuideButton: 'መመሪያውን ደብቅ', // needs native review
+      detailedTitle: 'የደረጃ በደረጃ የተደራሽነት መመሪያዎች', // needs native review
+      detailedSteps: [
+        'እያንዳንዱን ቁልፍ፣ አገናኝ ወይም የቅጽ ሳጥን በድምፅ ለመስማት Tab እና Shift + Tabን ይጠቀሙ። ሳጥኖችን ለመምረጥ Space፣ በምናሌዎች ውስጥ ደግሞ የቀስት ቁልፎችን ይጠቀሙ።', // needs native review
+        'የGemini Live ረዳትን ለማስጀመር Ctrl + Shift + A (ወይም Ctrl + Tab) ይጫኑ። በማንኛውም ጊዜ ለማቆም እንደገና Ctrl + Shift + A ይጫኑ።', // needs native review
+        'የረዳት መስኮቱን ለመክፈት/ለመዝጋት Alt + Shift + A፣ ማስነሻ ማይክሮፎኑን ለመቆጣጠር Alt + Shift + M፣ የገጽ መገኛዎን ለመስማት Alt + Shift + L ይጫኑ።', // needs native review
+      ],
+      detailedPrivacyNote: 'የግላዊነት ጥበቃ፡ የይለፍ ቃል እና ሚስጥራዊ ሳጥኖች የተጻፉ ፊደላትን በፍጹም በድምፅ አያነቡም።', // needs native review
+    },
+  },
+  voice: {
+    startMic: 'ማይክሮፎን ጀምር', // needs native review
+    stopMic: 'ማይክሮፎን አቁም', // needs native review
+    listeningState: 'በማዳመጥ ላይ… አሁን በግልፅ ይናገሩ', // needs native review
+    transcribingState: 'ድምፅዎን ወደ ጽሁፍ በመቀየር ላይ…', // needs native review
+    transcriptLabel: 'የተሰማውን ጽሁፍ ይመልከቱ (ማስተካከል ይችላሉ)', // needs native review
+    useThis: 'ይህን ጽሁፍ ተጠቀም', // needs native review
+    tryAgain: 'እንደገና ሞክር', // needs native review
+    discard: 'አጥፋ', // needs native review
+    unsupportedMessage: 'የድምፅ መቀበያ በዚህ አሳሽ ላይ አይሰራም። እባክዎ ከታች በጽሁፍ ይሙሉ።', // needs native review
+    permissionDeniedMessage: 'የማይክሮፎን ፈቃድ አልተሰጠም። በአሳሽ ቅንብር መፍቀድ ወይም ከታች በጽሁፍ መሙላት ይችላሉ።', // needs native review
+    noAudioStoredNote: 'ድምፅዎ ወደ ጽሁፍ ብቻ ይቀየራል። ድምፅ አይቀመጥም።', // needs native review
+    sensitiveDisabledTitle: 'ለመታወቂያ ቁጥር ድምፅ መቀበያ ተዘግቷል', // needs native review
+    sensitiveDisabledBody: 'ደህንነትዎን ለመጠበቅ እባክዎ ቁጥሩን በእጅ ይጻፉ።', // needs native review
+    readToAssistantOption: 'ለታመነው የአጋር ረዳት በድምፅ አንብቤ ልንገር', // needs native review
+    readToAssistantReminder: 'ማሳሰቢያ፡ ቁጥሩን ጮክ ብለው ሲያነቡ አጠገብዎ ያሉ ሰዎች ሊሰሙ ይችላሉ።', // needs native review
+    detectedLanguageLabel: 'የተለየው ቋንቋ', // needs native review
+    permissionPromptNote: 'አሳሽዎ የማይክሮፎን ፈቃድ ሲጠይቅ "ፍቀድ" (Allow) የሚለውን ይምረጡ። ድምፅዎ በፍጹም አይቀመጥም።', // needs native review
+    retryMic: 'ማይክሮፎኑን እንደገና ሞክር', // needs native review
+    emptySpeechError: 'ምንም ድምፅ አልተሰማም። እንደገና ለመሞከር ማይክሮፎን ጀምርን ይጫኑ ወይም ይጻፉ።', // needs native review
+    fallbackEnglishButton: 'በእንግሊዝኛ ይናገሩ', // needs native review
+    voiceNoteFallbackNotice: 'ኢንተርኔት የለም ወይም ሰርቨሩ አይሰራም፡ የድምፅ ማስታወሻው በዚህ ገጽ ላይ ብቻ ተይዟል።', // needs native review
+  },
+  voiceAssistant: {
+    title: 'ባለብዙ ቋንቋ የድምፅ ረዳት', // needs native review
+    subtitle: 'በአማርኛ፣ በኦሮምኛ ወይም በእንግሊዝኛ ይናገሩ ወይም ይጻፉ።', // needs native review
+    openButton: 'የድምፅ ረዳት', // needs native review
+    closeButton: 'ረዳቱን ዝጋ', // needs native review
+    minimizeButton: 'ውይይቱን አሳንስ', // needs native review
+    expandButton: 'ውይይቱን አስፋ', // needs native review
+    dockLeftLabel: 'መስኮቱን ወደ ግራ ውሰድ', // needs native review
+    dockRightLabel: 'መስኮቱን ወደ ቀኝ ውሰድ', // needs native review
+    actionHistoryTitle: 'የቅርብ ጊዜ የድረ-ገጽ እርምጃዎች', // needs native review
+    shortcutHint: 'ቀጥታ ድምፅ መቀየሪያ: Ctrl+Shift+A · የድምፅ አቋራጭ: Ctrl+Alt+Shift+A', // needs native review
+    liveStoppedNotice: 'ቀጥታ ድምፅ ቆሟል እና ማይክሮፎኑ ተለቋል።', // needs native review
+    statusBadges: {
+      idle: 'ዝግጁ (Idle)', // needs native review
+      listening: 'በማዳመጥ ላይ', // needs native review
+      processing: 'በማከናወን ላይ', // needs native review
+      speaking: 'በመናገር ላይ', // needs native review
+    },
+    autoDetectLabel: 'የተነገረውን ቋንቋ በራስ-ሰር ለይ (EN / AM / OM)', // needs native review
+    speakOrTypePrompt: 'ስለ ምዝገባ፣ መታወቂያ አማራጮች ወይም ተደራሽ ስራዎች ይጠይቁ', // needs native review
+    inputPlaceholder: 'ይጻፉ ወይም በማይክሮፎን ይናገሩ…', // needs native review
+    sendButton: 'ላክ', // needs native review
+    speakButton: 'በድምፅ ተናገር', // needs native review
+    stopSpeakingButton: 'ድምፅ አቁም', // needs native review
+    thinkingStatus: 'በማሰብ ላይ…', // needs native review
+    speakingStatus: 'በመናገር ላይ…', // needs native review
+    clearChat: 'አጽዳ', // needs native review
+    emptyState: 'በአማርኛ፣ በኦሮምኛ ወይም በእንግሊዝኛ ይናገሩ ወይም ይጻፉ። በተመሳሳይ ቋንቋ እመልስልዎታለሁ።', // needs native review
+    switchedLanguageNotice: 'ቋንቋው ወደ {language} ተቀይሯል', // needs native review
+    providerBadgeNeural: 'ተፈጥሯዊ የብዙ ቋንቋ ድምፅ (EN / AM / OM)', // needs native review
+    providerBadgeBrowser: 'የአሳሽ ድምፅ (እንግሊዝኛ ብቻ)', // needs native review
+    providerUnavailable: 'ለዚህ ቋንቋ ትክክለኛ ድምፅ አልተገኘም። እባክዎ ከላይ ያለውን ጽሁፍ ያንብቡ።', // needs native review
+    handsFreeGreeting: 'ሰላም! እያዳመጥኩ ነው። እንዴት ልርዳዎት እችላለሁ?', // needs native review
+    handsFreeGoodbye: 'ደህና ሁኑ! እንደገና እገዛ ሲፈልጉ "Hey Access" ይበሉ።', // needs native review
+    unclearSpeechRetry: 'በግልጽ አልተሰማኝም። እባክዎ እንደገና ይናገሩ ወይም ለማቆም "ደህና ሁኑ" ይበሉ።', // needs native review
+    quotaReachedNotice: 'የAI አገልግሎት ገደብ ላይ ደርሷል። የድረ-ገጹን አብሮ የተሰራ ድምፅ ረዳት እየተጠቀምኩ ነው።', // needs native review
+    stateLabels: {
+      waiting: 'የማስነሻ ቃል በመጠበቅ ላይ', // needs native review
+      activated: 'ተነስቷል', // needs native review
+      listening: 'በማዳመጥ ላይ', // needs native review
+      processing: 'በማሰብ ላይ', // needs native review
+      responding: 'በመመለስ ላይ', // needs native review
+      active_conversation: 'ቀጣይ ውይይት ንቁ ነው', // needs native review
+      ended: 'ተጠናቋል', // needs native review
+    },
+  },
+  voiceTrigger: {
+    buttonPrefix: 'የድምፅ ማስነሻ', // needs native review
+    statusListening: 'በማዳመጥ ላይ', // needs native review
+    statusPaused: 'ቆሟል', // needs native review
+    statusMuted: 'ተዘግቷል', // needs native review
+    statusUnsupported: 'አይደገፍም', // needs native review
+    wakePhraseLabel: '"{phrase}" ይበሉ', // needs native review
+    ariaListening: 'ያለ እጅ የድምፅ ማስነሻ "{phrase}"ን በማዳመጥ ላይ ነው። ለመዝጋት ይጫኑ።', // needs native review
+    ariaPaused: 'የድምፅ ረዳት ክፍት እስከሆነ ድረስ ማዳመጫው ለጊዜው ቆሟል። ለመዝጋት ይጫኑ።', // needs native review
+    ariaMuted: 'ያለ እጅ የድምፅ ማስነሻ ተዘግቷል። "{phrase}"ን ለማዳመጥ ይጫኑ።', // needs native review
+    ariaUnsupported: 'ያለ እጅ የድምፅ ማስነሻ በዚህ አሳሽ ወይም ደህንነቱ ባልተጠበቀ ግንኙነት ላይ አይሰራም።', // needs native review
+    announcedListening: 'ማይክሮፎኑ "{phrase}"ን ለመስማት በማዳመጥ ላይ ነው።', // needs native review
+    announcedMuted: 'ያለ እጅ የድምፅ ማስነሻ ተዘግቷል።', // needs native review
+    announcedTriggered: '"{phrase}" ተሰምቷል። የድምፅ ረዳትን በመክፈት ላይ።', // needs native review
+    announcedPaused: 'የድምፅ ረዳት ክፍት ስለሆነ ማዳመጫው ለጊዜው ቆሟል።', // needs native review
+    errorPermissionDenied: 'የማይክሮፎን ፈቃድ ተከልክሏል። በአሳሽ ቅንብር ፈቅደው እንደገና ይሞክሩ።', // needs native review
+    errorAudioCapture: 'የሚሰራ ማይክሮፎን አልተገኘም ወይም በሌላ መተግበሪያ እየተጠቀመ ነው።', // needs native review
+    errorNetwork: 'የድምፅ ማዳመጫ ግንኙነት ተቋርጧል። እንደገና ለመጀመር ይጫኑ።', // needs native review
+    errorLanguageUnsupported: 'ተከታታይ የድምፅ ማስነሻ ለዚህ ቋንቋ አይደገፍም።', // needs native review
+    errorBrowserUnsupported: 'ተከታታይ የድምፅ ማስነሻ በዚህ አሳሽ ላይ አይደገፍም። ከጎኑ ያለውን የድምፅ ረዳት ቁልፍ ይጠቀሙ።', // needs native review
+    errorHttpsRequired: 'የድምፅ ማዳመጥ ደህንነቱ የተጠበቀ HTTPS ግንኙነት ይፈልጋል።', // needs native review
+    dismissError: 'መልዕክቱን ዝጋ', // needs native review
+  },
+  saveResume: {
+    panelTitle: 'አስቀምጥ እና በኋላ ቀጥል', // needs native review
+    sharedPhoneQuestion: 'ይህ የጋራ ስልክ ወይም የህዝብ ኮምፒውተር ነው?', // needs native review
+    sharedPhoneYes: 'አዎ፣ የጋራ ስልክ ነው', // needs native review
+    sharedPhoneNo: 'አይ፣ የራሴ ስልክ ነው', // needs native review
+    sharedPhoneWarning: 'ይህ የጋራ ስልክ ስለሆነ ምንም መረጃ በስልኩ ላይ አይቀመጥም። ገጹን ሲዘጉ ይጠፋል።', // needs native review
+    saveOnPhoneButton: 'ሚስጥራዊ ያልሆኑ መልሶችን በዚህ ስልክ አስቀምጥ', // needs native review
+    saveOnPhoneExplain: 'ስምዎን እና የመገናኛ ምርጫዎን በዚህ ስልክ ብቻ ያስቀምጣል። መታወቂያ ቁጥር እና የግል ድጋፍ ጥያቄ አይቀመጥም።', // needs native review
+    deleteSavedButton: 'የተቀመጡ መልሶቼን አጥፋ', // needs native review
+    deletedConfirm: 'በዚህ ስልክ ላይ የተቀመጡ መልሶች በሙሉ ጠፍተዋል።', // needs native review
+    resumeFoundTitle: 'በዚህ ስልክ ላይ የተቀመጠ ረቂቅ ተገኝቷል', // needs native review
+    resumeFoundBody: 'የተቀመጠበት ቀን {date}። መታወቂያ ቁጥሮች እና የግል ድጋፍ ጥያቄዎች አልተቀመጡም።', // needs native review
+    resumeButton: 'የተቀመጠውን ቀጥል', // needs native review
+    statusMemoryOnly: 'በጊዜያዊ ማህደር ብቻ ተይዟል (ገጹ ከተዘጋ ይጠፋል)', // needs native review
+    statusDeviceSaved: 'ሚስጥራዊ ያልሆኑ መልሶች በዚህ ስልክ ላይ ብቻ ተቀምጠዋል', // needs native review
+    statusServerSaved: 'በሰርቨር ላይ በደህንነት ተቀምጧል', // needs native review
+    statusErrorKeptInMemory: 'ሰርቨሩን ማግኘት አልተቻለም። የጻፉት መልስ ግን በዚህ ገጽ ላይ አልጠፋም።', // needs native review
+    smsTitle: 'የመቀጠያ ሊንክ በSMS ያግኙ', // needs native review
+    smsNotConfigured: 'የSMS አገልግሎት ገና አልተገናኘም። በማሳያ ሁነታ (Demo) ምንም SMS አይላክም።', // needs native review
+    smsPhoneLabel: 'ለመቀጠያ ሊንክ የስልክ ቁጥር', // needs native review
+    smsSendButton: 'የመቀጠያ ሊንክ ላክ', // needs native review
+    smsSentSuccess: 'ሰርቨሩ የSMS ጥያቄዎን ተቀብሏል።', // needs native review
+    exportDataButton: 'መረጃዬን አውርድ (JSON)', // needs native review
+    deleteConfirmTitle: 'የተቀመጠ መገለጫዎን እና መልሶችዎን ያጥፉ?', // needs native review
+    deleteConfirmBody: 'ይህ የተቀመጡ መልሶችዎን ከዚህ መሳሪያ ወይም ሰርቨር እስከመጨረሻው ያጠፋል።', // needs native review
+    deleteConfirmYes: 'አዎ፣ ሁሉንም አጥፋ', // needs native review
+    deleteConfirmCancel: 'መልሶቼን አቆይ', // needs native review
+  },
+  onboarding: {
+    pageTitle: 'የተማሪ ምዝገባ', // needs native review
+    stepDeviceTitle: 'ከመጀመራችን በፊት፡ ይህ የጋራ ስልክ ነው?', // needs native review
+    stepDeviceHelp: 'ሌሎች ሰዎች ይህን ስልክ የሚጠቀሙ ከሆነ ግላዊነትዎን ለመጠበቅ ይረዳናል።', // needs native review
+    stepDeviceWhy: 'የግል መረጃዎ በጋራ ስልክ ላይ እንዳይቀር ለመጠበቅ ነው።', // needs native review
+    stepNameTitle: 'ሙሉ ስምዎ ማን ነው?', // needs native review
+    stepNameHelp: 'አሰልጣኞች እንዲጠሩዎት የሚፈልጉትን ስም ይጻፉ ወይም ይናገሩ።', // needs native review
+    stepNameLabel: 'ሙሉ ስም', // needs native review
+    stepNameWhy: 'ስምዎን ለመጥራት እና የመማሪያ መገለጫዎን ለማዘጋጀት እንጠቀምበታለን።', // needs native review
+    stepContactTitle: 'እንዴት ልናገኝዎት እንችላለን?', // needs native review
+    stepContactHelp: 'የሚመችዎትን መንገድ ይምረጡ ወይም ይህን ጥያቄ ይለፉ።', // needs native review
+    stepContactMethodLabel: 'የመገናኛ መንገድ', // needs native review
+    stepContactValueLabel: 'የስልክ ቁጥር ወይም ኢሜይል', // needs native review
+    stepContactWhy: 'የትምህርት ፕሮግራሙን ጊዜ እና መረጃ ለማሳወቅ ነው።', // needs native review
+    contactMethods: {
+      phone: 'ስልክ ወይም SMS', // needs native review
+      email: 'ኢሜይል', // needs native review
+      partner_contact: 'በአጋር ድርጅት በኩል', // needs native review
+      none: 'አሁን መገናኛ መስጠት አልፈልግም', // needs native review
+    },
+    stepIdentityTitle: 'የመታወቂያ አማራጭ ይምረጡ', // needs native review
+    stepIdentityHelp: 'የቀበሌ መታወቂያ ወይም ፓስፖርት ግዴታ አይደለም። ለእርስዎ የሚስማማውን ይምረጡ።', // needs native review
+    stepIdentityWhy: 'ማንም ሰው በመታወቂያ እጥረት እንዳይገለል አማራጭ መንገዶችን እንቀበላለን።', // needs native review
+    identityRoutes: {
+      national_id: {
+        label: 'ብሔራዊ መታወቂያ (ፋይዳ / ቀበሌ)', // needs native review
+        desc: 'ብሔራዊ መታወቂያ ካለዎት ይህን ይምረጡ።', // needs native review
+      },
+      refugee_id: {
+        label: 'የስደተኛ መታወቂያ', // needs native review
+        desc: 'የስደተኛ ምዝገባ ካርድ ወይም የUN/RRS ሰነድ ካለዎት ይህን ይምረጡ።', // needs native review
+      },
+      other_document: {
+        label: 'ሌላ የመታወቂያ ሰነድ', // needs native review
+        desc: 'የተማሪ መታወቂያ ወይም የማህበረሰብ ደብዳቤ።', // needs native review
+      },
+      no_documents: {
+        label: 'እነዚህ ሰነዶች የሉኝም', // needs native review
+        desc: 'ያለ ምንም መታወቂያ ይቀጥሉ። አስተባባሪ በኋላ ሊረዳዎት ይችላል።', // needs native review
+      },
+      partner_referral: {
+        label: 'በአጋር ድርጅት በኩል አመልክቱልኝ', // needs native review
+        desc: 'አንድ NGO ወይም የማህበረሰብ ማዕከል ምዝገባዎን ያረጋግጣል።', // needs native review
+      },
+    },
+    idNumberLabel: 'የመታወቂያ ቁጥር (አማራጭ)', // needs native review
+    partnerReferralOrgLabel: 'የአጋር ድርጅቱ ስም (አማራጭ)', // needs native review
+    stepSupportTitle: 'የትምህርት ወይም የተደራሽነት ድጋፍ ይፈልጋሉ?', // needs native review
+    stepSupportHelp: 'የሚያስፈልግዎትን ድጋፍ ይምረጡ። የህክምና ማስረጃ ወይም ምርመራ አይጠየቅም።', // needs native review
+    stepSupportPrivacyNotice: 'ሚስጥራዊ፡ ይህን የሚያየው የተደራሽነት ረዳት ብቻ ነው። አሰሪዎች በፍጹም አያዩትም።', // needs native review
+    stepSupportWhy: 'ተስማሚ የመማሪያ ቁሳቁስ ወይም ተጨማሪ ጊዜ አስቀድመን ለማዘጋጀት ነው።', // needs native review
+    supportOptions: {
+      help_completing: 'ምዝገባውን ለመሙላት እገዛ', // needs native review
+      communication_assistance: 'የመግባቢያ እገዛ (የምልክት ቋንቋ፣ ቀላል ጽሁፍ)', // needs native review
+      alternative_materials: 'አማራጭ የመማሪያ ቁሳቁስ (ድምፅ፣ ትልቅ ጽሁፍ፣ ስክሪን አንባቢ)', // needs native review
+      flexible_scheduling: 'ተጨማሪ ጊዜ ወይም ምቹ የጊዜ ሰሌዳ', // needs native review
+      other_support: 'ሌላ ድጋፍ', // needs native review
+      discuss_privately: 'ከአስተባባሪ ጋር በግል መነጋገር እመርጣለሁ', // needs native review
+    },
+    supportNotesLabel: 'ተጨማሪ የሚረዳዎት ነገር ካለ ይጻፉ (አማራጭ፣ የህክምና ዝርዝር አያስፈልግም)', // needs native review
+    stepPartnerConsentTitle: 'በአጋር ድርጅት የታገዘ የፈቃድ መዝገብ', // needs native review
+    stepPartnerConsentHelp: 'ረዳት ስለሚመዘግብዎት፣ ከመላኩ በፊት ተማሪው ማንበብ እና መፍቀድ አለበት።', // needs native review
+    stepPartnerConsentWhy: 'ያለ ተማሪው ፈቃድ ማንም መረጃ እንዳይልክ ለመከላከል ነው።', // needs native review
+    partnerOrgInputLabel: 'የአጋር ድርጅቱ ስም', // needs native review
+    partnerRepInputLabel: 'የረዳቱ ሙሉ ስም', // needs native review
+    partnerSharedScopeText: 'ረዳቱ ስምዎን፣ መገናኛዎን እና የመታወቂያ አይነትዎን ማየት ይችላል። የግል ድጋፍ ማስታወሻን አያይም።', // needs native review
+    partnerConsentCheckbox: 'ተማሪው ምን እንደሚጋራ ተረድቶ ምዝገባው እንዲላክ ግልፅ ፈቃድ መስጠቱን አረጋግጣለሁ።', // needs native review
+    reviewTitle: 'መልሶችዎን ይገምግሙ እና ያስተካክሉ', // needs native review
+    reviewHelp: 'ከመላክዎ በፊት ከታች ያሉትን መልሶች ይፈትሹ። ለመቀየር አስተካክል ይጫኑ።', // needs native review
+    confirmationTitle: 'ምዝገባው ተዘጋጅቷል', // needs native review
+    confirmationDemoNote: 'የማሳያ ሁነታ፡ መልሶችዎ እዚህ ተረጋግጠዋል፤ ወደ እውነተኛ ሰርቨር አልተላኩም።', // needs native review
+    confirmationRealNote: 'ምዝገባዎ ወደ ሰርቨር ተልኳል።', // needs native review
+    partnerConfirmationNote: 'አጋር ድርጅት ያገኝዎታል።', // needs native review
+    referralNextStepNote: 'ቀጣይ እርምጃ፡ የማህበረሰብ አጋር አስተባባሪ ምዝገባዎን አረጋግጦ በመረጡት መንገድ ያገኝዎታል።', // needs native review
+    editModeTitle: 'መገለጫዬን አስተካክል', // needs native review
+    editModeSavedNote: 'የመገለጫ ለውጦችዎ ተቀምጠዋል።', // needs native review
+    startCareerFromConfirm: 'ቀጥሎ ተደራሽ ስራዎችን ይመልከቱ', // needs native review
+    errors: {
+      emptyName: 'የስም ሳጥኑ ባዶ ነው። እባክዎ ለመቀጠል ስምዎን ይጻፉ ወይም ይናገሩ።', // needs native review
+      emptyIdentityRoute: 'የመታወቂያ አማራጭ አልተመረጠም። እባክዎ ከላይ አንዱን ይምረጡ።', // needs native review
+      emptyPartnerConsent: 'የፈቃድ ሳጥኑ አልተመረጠም። እባክዎ ከመላክዎ በፊት የተማሪውን ፈቃድ ያረጋግጡ።', // needs native review
+      emptyPartnerOrg: 'የአጋር ድርጅቱ ስም ባዶ ነው። እባክዎ የድርጅቱን ስም ይጻፉ።', // needs native review
+      emptyContactValue: 'የመገናኛ ዝርዝሩ ባዶ ነው። እባክዎ ስልክ ወይም ኢሜይል ያስገቡ ወይም "አሁን መስጠት አልፈልግም" ይምረጡ።', // needs native review
+      invalidEthiopianPhone: 'በ09፣ 07 ወይም +251 የሚጀምር ትክክለኛ የኢትዮጵያ ስልክ ቁጥር ያስገቡ።', // needs native review
+    },
+  },
+  career: {
+    pageTitle: 'ተደራሽ የስራ መግቢያ', // needs native review
+    pageSubtitle: 'የስራ ቦታ ድጋፍ የሚሰጡ ስራዎችን ይፈልጉ። የፍለጋ ምርጫዎችዎ በስልክዎ ላይ በሚስጥር ይቆያሉ።', // needs native review
+    searchLabel: 'በስራ ስም፣ በችሎታ ወይም በከተማ ይፈልጉ', // needs native review
+    searchPlaceholder: 'ምሳሌ፡ ደንበኛ አገልግሎት፣ አዲስ አበባ፣ ርቀት…', // needs native review
+    filterTitle: 'በአሰሪው በሚሰጥ ድጋፍ አጣራ (ሚስጥራዊ)', // needs native review
+    filterPrivacyNote: 'የማጣሪያ ምርጫዎችዎ ለአሰሪዎች በፍጹም አይታዩም።', // needs native review
+    clearFilters: 'ማጣሪያዎችን አጽዳ', // needs native review
+    noJobsMatch: 'ከዚህ ምርጫ ጋር የሚስማማ ስራ የለም። አንድ ማጣሪያ ያንሱ።', // needs native review
+    accommodationsHeading: 'የሚሰጡ የተደራሽነት ድጋፎች', // needs native review
+    skillsHeading: 'የሚፈለጉ ችሎታዎች', // needs native review
+    deadlineLabel: 'የማመልከቻ ቀን ገደብ', // needs native review
+    applyButton: 'ለዚህ ስራ አመልክት', // needs native review
+    viewDetails: 'ሙሉ የተደራሽነት ዝርዝር ይመልከቱ', // needs native review
+    hideDetails: 'ዝርዝሩን ደብቅ', // needs native review
+    jsonLdLabel: 'Schema.org JobPosting JSON-LD ተያይዟል', // needs native review
+    listenSummary: 'ማጠቃለያውን በድምፅ አንብብ', // needs native review
+    mySupportFilterLabel: 'የሚያስፈልገኝ ድጋፍ (ከተቀመጡ ምርጫዎቼ ጋር በግል አዛምድ)', // needs native review
+    categories: {
+      remote_flexible: 'የርቀት ወይም ተለዋዋጭ ስራ', // needs native review
+      flexible_hours: 'ተለዋዋጭ የስራ ሰዓት', // needs native review
+      screen_reader_tools: 'ከስክሪን አንባቢ ጋር የሚሰሩ መሳሪያዎች', // needs native review
+      accessible_workplace: 'ተደራሽ የስራ ቦታ', // needs native review
+      assistive_tech: 'የአጋዥ ቴክኖሎጂ ድጋፍ', // needs native review
+      communication_support: 'የመግባቢያ ድጋፍ', // needs native review
+      other_accommodations: 'ሌሎች የተገለጹ ድጋፎች', // needs native review
+    },
+    applyFlow: {
+      titlePrefix: 'ማመልከቻ ለ፡', // needs native review
+      stepNameTitle: 'ለዚህ ማመልከቻ ስምዎን ያረጋግጡ', // needs native review
+      stepNameWhy: 'አሰሪው ማን እንዳመለከተ እንዲያውቅ ነው።', // needs native review
+      stepContactTitle: 'አሰሪው በየትኛው መንገድ ያግኝዎት?', // needs native review
+      stepContactWhy: 'ለዚህ ስራ የቃለ መጠይቅ መረጃ ለመላክ ብቻ ይጠቅማል።', // needs native review
+      stepExpTitle: 'ለዚህ ስራ የሚያበቃዎትን ልምድ ይንገሩን', // needs native review
+      stepExpHelp: 'ስለ ችሎታዎ በድምፅ መናገር ወይም በአጭሩ መጻፍ ይችላሉ።', // needs native review
+      stepExpWhy: 'ቀጣሪው ቡድን ጥንካሬዎን እንዲረዳ ይረዳዋል።', // needs native review
+      stepConsentTitle: 'አማራጭ፡ ለቃለ መጠይቅ ወይም ለስራ ድጋፍ መጠየቅ ይፈልጋሉ?', // needs native review
+      stepConsentHelp: 'በነባሪነት የግል ድጋፍ ምርጫዎ ለአሰሪው አይጋራም።', // needs native review
+      stepConsentWhy: 'ለአሰሪው ምን እንደሚታይ እርስዎ ይቆጣጠራሉ።', // needs native review
+      shareToggleLabel: 'አዎ፣ ለዚህ ስራ ወይም ቃለ መጠይቅ ማስተካከያ መጠየቅ እፈልጋለሁ', // needs native review
+      shareNoteLabel: 'ምን አይነት ማስተካከያ ይረዳዎታል? (ምሳሌ፡ በቪዲዮ ቃለ መጠይቅ ጽሁፍ)', // needs native review
+      explicitConsentLabel: 'ይህን የማስተካከያ ጥያቄ ለአሰሪው እንዲላክ ግልፅ ፈቃድ እሰጣለሁ።', // needs native review
+      submittedTitle: 'ማመልከቻው ተመዝግቧል', // needs native review
+      submittedBodyDemo: 'የማሳያ ሁነታ፡ ማመልከቻዎ ለማሳያ ብቻ ተመዝግቧል። ወደ እውነተኛ አሰሪ አልተላከም።', // needs native review
+      submittedBodyReal: 'ማመልከቻዎ ለአሰሪው ተልኳል።', // needs native review
+      backToJobs: 'ወደ ተደራሽ ስራዎች ተመለስ', // needs native review
+    },
+  },
+  employer: {
+    pageTitle: 'የአሰሪ የስራ ድጋፍ መመዝገቢያ', // needs native review
+    pageSubtitle: 'የስራ ቦታዎ የሚሰጠውን ተደራሽነት ይግለጹ። አመልካቾችን የህክምና ማስረጃ ወይም ምርመራ በፍጹም አይጠይቁ።', // needs native review
+    safeguardBannerTitle: 'የግላዊነት እና የፍትሃዊነት ደንብ', // needs native review
+    safeguardBannerBody: 'ማንኛውም ሳጥን የህክምና ማስረጃ፣ ምርመራ ወይም የአካል ጉዳት አይነት ከጠየቀ ማተም ይታገዳል።', // needs native review
+    blockedPublishTitle: 'ከማተምዎ በፊት የህክምና ወይም የምርመራ ጥያቄን ያስወግዱ', // needs native review
+    jobTitleLabel: 'የስራ መደብ ስም', // needs native review
+    orgNameLabel: 'የድርጅት ስም', // needs native review
+    locationLabel: 'ከተማ / ቦታ', // needs native review
+    remoteCheckbox: 'ከርቀት መስራት ይቻላል', // needs native review
+    employmentTypeLabel: 'የስራ አይነት', // needs native review
+    summaryLabel: 'ቀላል የስራ ማብራሪያ', // needs native review
+    skillsLabel: 'የሚፈለጉ ችሎታዎች (በኮማ ይለዩ)', // needs native review
+    workEnvLabel: 'የስራ ቦታው ተደራሽነት', // needs native review
+    remoteFlexLabel: 'የርቀት ወይም ተለዋዋጭ የስራ ሁኔታ', // needs native review
+    assistiveTechLabel: 'ያለ አጋዥ ቴክኖሎጂ', // needs native review
+    commOptionsLabel: 'የመግባቢያ አማራጮች', // needs native review
+    interviewAccLabel: 'የቃለ መጠይቅ ድጋፎች', // needs native review
+    appProcessAccLabel: 'የማመልከቻ ሂደት ድጋፎች', // needs native review
+    additionalSupportLabel: 'ተጨማሪ የሚሰጥ ድጋፍ (አማራጭ)', // needs native review
+    publishButton: 'ተደራሽ የስራ ማስታወቂያ አትም', // needs native review
+    publishedSuccess: 'የስራ ማስታወቂያው ከSchema.org JSON-LD ጋር በተደራሽ ስራዎች ገጽ ታትሟል።', // needs native review
+    viewPublishedInGateway: 'ማስታወቂያውን በስራ መግቢያው ይመልከቱ', // needs native review
+  },
+  orientation: {
+    whereAmIButton: 'የት ነኝ?', // needs native review
+    whatCanIDoButton: 'እዚህ ምን ማድረግ እችላለሁ?', // needs native review
+    autoSpeechOn: 'የገጽ ንባብ መመሪያ: በርቷል', // needs native review
+    autoSpeechOff: 'የገጽ ንባብ መመሪያ: ጠፍቷል', // needs native review
+    announceNowAria: 'ያሉበትን ገጽ እና የሚገኙ ተግባራትን በድምፅ ያሰሙ', // needs native review
+  },
+  learning: {
+    pageTitle: 'የመማሪያ ግብዓቶች', // needs native review
+    pageSubtitle: 'ለስክሪን አንባቢ ተስማሚ የሆኑ የALX ሶፍትዌር ምህንድስና፣ ዳታ ሳይንስ እና AI ስልጠናዎች ከድምፅ ማጠቃለያ ጋር።', // needs native review
+    filterAll: 'ሁሉም ዘርፎች', // needs native review
+    hubBadge: 'ALX አዲስ አበባ ማዕከል · ለስክሪን አንባቢ ዝግጁ', // needs native review
+    listenGuideLabel: 'የኮርስ መመሪያውን ያዳምጡ', // needs native review
+    assistiveTipsHeading: 'የአጋዥ ቴክኖሎጂ ማስታወሻዎች', // needs native review
+  },
+  dashboard: {
+    pageTitle: 'የተጠቃሚ ዳሽቦርድ', // needs native review
+    pageSubtitle: 'የምዝገባ ሁኔታዎን፣ የተደራሽነት ቅንብሮችዎን፣ የDOM ግላዊነት ጥበቃን እና ፈጣን መሸጋገሪያዎችን ይመልከቱ።', // needs native review
+    statusHeading: 'የምዝገባ እና መገለጫ ሁኔታ', // needs native review
+    preferencesHeading: 'ንቁ የተደራሽነት ቅንብሮች', // needs native review
+    securityHeading: 'የደህንነት እና የግላዊነት ጥበቃ', // needs native review
+    domShieldBadge: 'የይለፍ ቃል መሸፈኛ እና የሰርቨር ጥበቃ ንቁ ነው', // needs native review
+    quickLinksHeading: 'ፈጣን የገጽ ማውጫ', // needs native review
+  },
+  footer: {
+    regionLabel: 'የተደራሽነት፣ የALX መረጃ እና የገጽ ግርጌ አሰሳ', // needs native review
+    aboutAlxHeading: 'ስለ ALX', // needs native review
+    aboutAlxBody:
+      'ALX በአፍሪካ ውስጥ ያለውን የቴክኖሎጂ የስራ እድል ክፍተት ለማጥበብ በሶፍትዌር ምህንድስና፣ በዳታ ሳይንስ እና በAI አለም አቀፍ ደረጃውን የጠበቀ ስልጠና ይሰጣል፤ በአዲስ አበባ ማዕከል እና በመላው አፍሪካ ማህበረሰብ ይደገፋል።', // needs native review
+    addisHubBadge: 'አዲስ አበባ የቴክኖሎጂ ማዕከል · የአፍሪካ ማህበረሰብ', // needs native review
+    exploreLearningBtn: 'የALX መማሪያ ግብዓቶችን ይክፈቱ', // needs native review
+    linksHeading: 'ተደራሽነት እና መመሪያዎች', // needs native review
+    accessibilityStmt: 'የተደራሽነት መግለጫ', // needs native review
+    feedbackForm: 'የተደራሽነት አስተያየት', // needs native review
+    privacyPolicy: 'የግላዊነት ፖሊሲ', // needs native review
+    termsOfService: 'የአገልግሎት ውሎች', // needs native review
+    assistantStatusHeading: 'የድምፅ ረዳት የቀጥታ ሁኔታ', // needs native review
+    voiceStatusLabel: 'ያለ እጅ የድምፅ ማስነሻ', // needs native review
+    languageHeading: 'ፈጣን የቋንቋ መቀየሪያ', // needs native review
+    bilingualEnBtn: 'English',
+    bilingualAmBtn: 'አማርኛ',
+    openAssistantBtn: 'ረዳቱን አስጀምር', // needs native review
+    modalCloseLabel: 'መስኮቱን ዝጋ', // needs native review
+    feedbackCategoryLabel: 'ርዕስ ወይም ያጋጠመ ችግር', // needs native review
+    feedbackMessageLabel: 'አስተያየትዎን ይጻፉ (የይለፍ ቃል፣ PIN ወይም ቶከን አይጻፉ)', // needs native review
+    feedbackSubmitBtn: 'አስተያየት ላክ', // needs native review
+    feedbackSuccessNotice: 'እናመሰግናለን። የተደራሽነት አስተያየትዎ ተመዝግቧል።', // needs native review
+  },
+  formBuilder: {
+    loginTitle: 'የቅጽ ገንቢ አስተዳደር', // needs native review
+    loginSubtitle:
+      'የተገደበ የአስተዳደር ክፍል። የድርጅት ቅጾችን፣ ጥያቄዎችን እና ሂደቶችን ማስተዳደር የሚችሉት የተፈቀደላቸው የሳቫና መግቢያ አስተዳዳሪዎች ብቻ ናቸው።', // needs native review
+    restrictedBadge: 'ለተፈቀደላቸው አስተዳዳሪዎች ብቻ', // needs native review
+    usernameLabel: 'የአስተዳዳሪ የተጠቃሚ ስም', // needs native review
+    passwordLabel: 'የይለፍ ቃል', // needs native review
+    showPassword: 'የይለፍ ቃል አሳይ', // needs native review
+    hidePassword: 'የይለፍ ቃል ደብቅ', // needs native review
+    signInButton: 'ግባ', // needs native review
+    signingIn: 'በመግባት ላይ…', // needs native review
+    invalidCredentials: 'የአስተዳዳሪ የተጠቃሚ ስም ወይም የይለፍ ቃል ትክክል አይደለም። እባክዎ አረጋግጠው እንደገና ይሞክሩ።', // needs native review
+    usernameRequired: 'እባክዎ የአስተዳዳሪ የተጠቃሚ ስምዎን ያስገቡ።', // needs native review
+    passwordRequired: 'እባክዎ የይለፍ ቃልዎን ያስገቡ።', // needs native review
+    sessionExpired: 'የአስተዳደር ክፍለ ጊዜዎ አብቅቷል ወይም ወጥተዋል። እባክዎ እንደገና ይግቡ።', // needs native review
+    backToGateway: 'ወደ ሳቫና መግቢያ ተመለስ', // needs native review
+    checkingSession: 'የአስተዳዳሪ ክፍለ ጊዜን በማረጋገጥ ላይ…', // needs native review
+    setupTitle: 'የግዴታ የመግቢያ መረጃ ማስተካከያ', // needs native review
+    setupSubtitle:
+      'ለደህንነት ሲባል ወደ ቅጽ ገንቢ ከመግባትዎ በፊት የመጀመሪያውን የተጠቃሚ ስም እና የይለፍ ቃል መቀየር አለብዎት።', // needs native review
+    currentUsernameLabel: 'የአሁኑ የተጠቃሚ ስም', // needs native review
+    newUsernameLabel: 'አዲስ የተጠቃሚ ስም', // needs native review
+    currentPasswordLabel: 'የአሁኑ የይለፍ ቃል', // needs native review
+    newPasswordLabel: 'አዲስ የይለፍ ቃል', // needs native review
+    confirmNewPasswordLabel: 'አዲሱን የይለፍ ቃል ያረጋግጡ', // needs native review
+    saveChangesButton: 'ለውጦችን አስቀምጥ', // needs native review
+    savingChanges: 'መረጃን በማዘመን ላይ…', // needs native review
+    passwordRulesHint:
+      'ቢያንስ 10 ፊደላትን (ትልቅ ፊደል፣ ትንሽ ፊደል፣ ቁጥር እና ልዩ ምልክት) ይጠቀሙ። የመጀመሪያውን የይለፍ ቃል አይድገሙ።', // needs native review
+    passwordWeakError:
+      'አዲሱ የይለፍ ቃል ቢያንስ 10 ፊደላት መሆን እና ትልቅ ፊደል፣ ትንሽ ፊደል፣ ቁጥር እና ምልክት ማካተት አለበት።', // needs native review
+    passwordMismatchError: 'አዲሱ የይለፍ ቃል እና ማረጋገጫው አይመሳሰሉም።', // needs native review
+    credentialsUpdatedNotice: 'የአስተዳዳሪ መግቢያ መረጃ በደህንነት ተዘምኗል። ወደ ቅጽ ገንቢ እንኳን በደህና መጡ።', // needs native review
+    workspaceBadge: 'የተጠበቀ የቅጽ ገንቢ መስሪያ ቦታ', // needs native review
+    workspaceTitle: 'የድርጅት እና የቅጽ ገንቢ መቆጣጠሪያ', // needs native review
+    logoutButton: 'ውጣ', // needs native review
+    tabs: {
+      forms: 'ቅጾች እና አርታኢ', // needs native review
+      organizations: 'ድርጅቶች', // needs native review
+      submissions: 'የገቡ ቅጾች', // needs native review
+      analytics: 'ትንታኔ', // needs native review
+      settings: 'የመለያ ቅንብሮች', // needs native review
+    },
+    accountSettingsTitle: 'የአስተዳዳሪ መለያ ቅንብሮች', // needs native review
+    accountInfoTitle: 'የመለያ መረጃ', // needs native review
+    roleLabel: 'የአስተዳዳሪ ሚና', // needs native review
+    assignedOrgLabel: 'የተመደበ ድርጅት', // needs native review
+    lastLoginLabel: 'የመጨረሻ መግቢያ', // needs native review
+    changeCredentialsTitle: 'የተጠቃሚ ስም እና የይለፍ ቃል ቀይር', // needs native review
+    createOrgTitle: 'አዲስ ድርጅት ፍጠር', // needs native review
+    createFormButton: 'አዲስ ቅጽ ፍጠር', // needs native review
+    saveDraftButton: 'ረቂቅ አስቀምጥ', // needs native review
+    publishButton: 'እትም አትም', // needs native review
+    archiveButton: 'ቅጽ አስቀምጥ (Archive)', // needs native review
+    versionHistoryTitle: 'የታተሙ እትሞች ታሪክ', // needs native review
+    addSectionButton: 'ክፍል ጨምር', // needs native review
+    addQuestionButton: 'ጥያቄ ጨምር', // needs native review
+    previewPublicLinkLabel: 'የታተመ ቅጽ አገናኝ', // needs native review
+    questionTypes: {
+      text: 'አጭር / ረጅም ጽሁፍ', // needs native review
+      email: 'ኢሜይል አድራሻ', // needs native review
+      phone: 'የስልክ ቁጥር', // needs native review
+      number: 'ቁጥር', // needs native review
+      date: 'ቀን', // needs native review
+      dropdown: 'ተቆልቋይ ምርጫ (Dropdown)', // needs native review
+      radio: 'ነጠላ ምርጫ (Radio)', // needs native review
+      checkbox: 'ብዙ ምርጫ (Checkbox)', // needs native review
+      yes_no: 'አዎ / አይ', // needs native review
+      file: 'ፋይል መጫኛ (የተጠበቀ)', // needs native review
+      address: 'አድራሻ', // needs native review
+      consent: 'የፈቃድ ስምምነት', // needs native review
+    },
+  },
+  auth: {
+    signInTitle: 'ወደ ሳቫና መግቢያ ይግቡ', // needs native review
+    registerTitle: 'የተማሪ ወይም የአሰሪ መለያ ይፍጠሩ', // needs native review
+    signInButton: 'ግባ', // needs native review
+    registerButton: 'መለያ ፍጠር', // needs native review
+    signOutButton: 'ውጣ', // needs native review
+    usernameOrEmailLabel: 'የተጠቃሚ ስም ወይም ኢሜይል', // needs native review
+    emailLabel: 'የኢሜይል አድራሻ', // needs native review
+    fullNameLabel: 'ሙሉ ስም', // needs native review
+    roleLabel: 'የመለያ አይነት', // needs native review
+    roleLearner: 'ተማሪ / ስራ ፈላጊ', // needs native review
+    roleEmployer: 'አሰሪ / አጋር ድርጅት', // needs native review
+    passwordLabel: 'የይለፍ ቃል', // needs native review
+    signedInAs: 'የገቡት በ', // needs native review
+    guestStatus: 'እንደ እንግዳ በመጠቀም ላይ (አማራጭ መግቢያ)', // needs native review
+  },
+};
